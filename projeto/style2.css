@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*:focus,
+*:active {
+  outline: none !important;
+  -webkit-top-highligth-color: transparent;
+}
+
+body {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  font-family: 'poppins', sans-serif;
+  place-items: center;
+  background-color: rgba(109, 109, 109, 0.377);
+}
+
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+}
+
+ul > li > a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  width: 400px;
+  margin-top: 50px;
+  border: 3px solid;
+  border-radius: 15px;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #e9e9e9;
+  border-radius: 50px;
+  padding: 15px;
+  margin: 15px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.671);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+i {
+  background-position: bottom;
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: “;
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50px;
+  transform: translate(-50px) rotate(45deg);
+  transition: all 0.3 cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon:hover .tooltip {
+  top: 45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .gg-instagram:hover,
+.wrapper .gg-instagram:hover .tooltip,
+.wrapper .gg-instagram:hover .tooltip::before {
+  background-color: rgb(71, 66, 60);
+  color: #ffffff;
+}
+
+.wrapper .gg-twitter:hover,
+.wrapper .gg-twitter:hover .tooltip,
+.wrapper .gg-twitter:hover .tooltip::before {
+  background-color: rgb(52, 85, 134);
+  color: #ffffff;
+}
+
+.wrapper .gg-person:hover,
+.wrapper .gg-person:hover .tooltip,
+.wrapper .gg-person:hover .tooltip::before {
+  background-color: rgb(184, 33, 71);
+  color: #ffffff;
+}
+
+.wrapper .gg-heart:hover,
+.wrapper .gg-heart:hover .tooltip,
+.wrapper .gg-heart:hover .tooltip::before {
+  background-color: deeppink;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}

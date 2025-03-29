@@ -15,7 +15,7 @@ body {
   width: 100%;
   font-family: 'poppins', sans-serif;
   place-items: center;
-  background-color: rgba(109, 109, 109, 0.377);
+  background-color: rgba(39, 29, 19, 0.582);
 }
 
 .wrapper {
@@ -25,7 +25,7 @@ body {
 
 ul > li > a {
   text-decoration: none;
-  color: black;
+  color: rgb(26, 20, 20);
 }
 
 img {
@@ -65,7 +65,7 @@ i {
   color: #ffffff;
   padding: 5px 8px;
   border-radius: 5px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 10px rgb(0, 0, 0);
   opacity: 0;
   pointer-events: none;
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -97,7 +97,7 @@ i {
 .wrapper .gg-instagram:hover,
 .wrapper .gg-instagram:hover .tooltip,
 .wrapper .gg-instagram:hover .tooltip::before {
-  background-color: rgb(71, 66, 60);
+  background-color: rgb(51, 46, 41);
   color: #ffffff;
 }
 

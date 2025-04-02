@@ -15,7 +15,7 @@ body {
   width: 100%;
   font-family: 'poppins', sans-serif;
   place-items: center;
-  background-color: rgba(39, 29, 19, 0.582);
+  background-color: rgb(90, 76, 76);
 }
 
 .wrapper {
@@ -25,7 +25,7 @@ body {
 
 ul > li > a {
   text-decoration: none;
-  color: rgb(26, 20, 20);
+  color: rgb(0, 0, 0);
 }
 
 img {

@@ -26,7 +26,7 @@ body {
   transform: translate(-50%, -50%);
   height: 300px;
   transition: 0.5s;
-  box-shadow: 0 0px 50px rgb(2, 156, 202);
+  box-shadow: 0 0px 50px rgb(0, 0, 0);
   border-radius: 15px;
 }
 .card:hover img {
@@ -42,7 +42,7 @@ body {
   transition: 0.5s;
   opacity: 0;
   visibility: hidden;
-  background: rgb(0, 151, 197);
+  background: rgb(228, 222, 222);
   margin: 20px;
   border-radius: 15px;
 }
@@ -57,6 +57,7 @@ body {
   font-size: 2em;
   line-height: 1em;
   margin-bottom: 40px;
+  text-transform: none;
 }
 
 .card .content p {
@@ -66,10 +67,10 @@ body {
 
 .card .content a {
   position: relative;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   padding: 10px 20px;
   border-radius: 10px;
-  background: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
   margin-top: 20px;
   display: inline-block;
   text-decoration: none;
